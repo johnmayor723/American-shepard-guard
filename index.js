@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Define routes
 app.get('/', (req, res) => {
-  res.send('loading.......');
+  res.render('index');
 });
 
 app.get('/about', (req, res) => {
